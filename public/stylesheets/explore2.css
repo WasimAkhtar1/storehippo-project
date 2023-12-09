@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: #d1e5ff;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    /* background:linear-gradient(#642bff,#ff22e6); */
+    border-radius: 20px;
+    background-color: #7CB334;
+  }
+  
+  /* responsive */
+  
+  ::selection{
+    background-color: #7CB334;
+  }  
+
+#main{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 6vw;
+    background: url("https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.pages/5cf50c8bb7784d784dce7eb9/5cf50b5b04ef187842ccd16c.png");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 5vw 8vw;
+}
+
+
+#main>h1{
+    font-weight: 500;
+}
+
+
+#main>p{
+    width: 25%;
+}
+
+#main>a{
+    color: #fff;
+    padding: 0.5vw 1.5vw;
+    border: 1px solid #7DB434;
+    background-color: #7DB434;
+    border-radius: 0.5vw;
+    position: relative;
+    top: 2vw;
+}
+
+/* trial */
+
+#trial{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+#trial>h1{
+    font-weight: 500;
+    font-size: 1.8vw;
+    
+}
+
+
+/* page1 */
+
+#page1{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3vw;
+}
+
+#right>h1{
+    font-weight: 500;
+}
+
+#right>p{
+    width: 80%;
+}
+
+
+/* page2 */
+
+#page2{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+
+#part-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 6vw;
+}
+
+#part-left>h1{
+    font-weight: 500;
+}
+
+#part-left>p{
+    width: 90%;
+}
+
+#part-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* page3 */
+#page3{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+#nav-part{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-part1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 6vw;
+}
+
+
+#nav-part1>h1{
+    font-weight: 500;
+    font-size: 2vw;
+
+}
+
+
+#nav-part1>p{
+    width: 90%;
+}
+
+
+/* page4 */
+
+#page4{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+#slide{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0 5vw;
+}
+
+#slide>h1{
+    font-weight: 500;
+}
+
+#slide>p{
+    width: 90%;
+}
+
+#slide1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#page5{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+
+
+#right-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+#right-nav>h1{
+    font-weight: 500;
+}
+
+#right-nav>p{
+    width: 90%;
+}
+
+#left-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+#page11{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    border-bottom:1px solid rgba(0,0,0,0.2) ;
+    align-items: center;
+    background-color: #F9F8EF;
+  }
+  
+  #talent{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #talent>a>i{
+    color: #7CB334;
+    padding: 12px 13px;
+    margin: 0 5px;
+    border: 1px solid #7CB334;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #talent>a>i::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #7CB334;
+    left: 0;
+    top: 0;
+    transition: all ease 0.4s;
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  
+  #talent>a>i:hover::after{
+    
+    transform: translateX(0%);
+    z-index: -1;
+  }
+  #talent>a>i:hover{
+    color: #fff;
+  }
+    
+  
+  
+  #talent1{
+    width: 50%;
+    height: 100%;
+    padding: 6vw;
+    
+  }
+  
+  #talent1>h1{
+    font-size: 2.3vw;
+  }
+  
+  #talent1>input{
+    margin-top: 1vw;
+    width: 300px;
+    height: 33px;
+    padding: 0 10px;
+    border-radius: 50px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  #talent1>a{
+    padding: 5px 15px;
+    border: 1px solid #7CB334;
+    border-radius: 50px;
+    color: #fff;
+     position: relative;
+     right: 80px;
+    background-color: #7CB334;
+  }
+  
+  #page12{
+    width: 100vw;
+    height: 85vh;
+    background-color: #F9F8EF;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    padding-top: 3vw;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  #tag5>h2{
+    font-size: 1.6vw;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 1px;
+    position: relative;
+  }
+  #tag5>h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background-color: #7CB334;
+    width: 40px;
+    height: 2px;
+  }
+  
+  #tag5>p{
+    font-size: 1.1vw;
+    line-height: 1;
+    color:rgba(0,0,0,0.8);
+    padding-top: 20px;
+  }
+  
+  #tag5>p:hover{
+    color: #7CB334;
+  }
+  
+  #page13{
+    width: 100vw;
+    height: 40vh;
+    background-color:#F9F8EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  #mobile>img{
+    width: 100px;
+    margin: 0 10px;  
+  }
+  
+  #mobile1>img{
+    width: 100px;
+    margin: 0 10px;  
+  
+  }
+  
+  #footer{
+    width: 100vw;
+    height: 8vh;
+    background-color: #F9F8EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #footer>p{
+    font-size: 1.1vw;
+  }
+  
+  #footer>p>span{
+    color: #7CB334;
+  }
